@@ -33,8 +33,6 @@ alias lso="ls -alG | awk '{k=0;for(i=0;i<=8;i++)k+=((substr(\$1,i+2,1)~/[rwx]/)*
 alias art='php artisan'
 
 # Docker
-alias oim="docker exec -ti $(docker ps | grep oim_sthportal-development | awk '{ print $1 }') /bin/bash"
-alias gp="sh ~/Documents/Bulutfon/git.sh"
 dstop() { docker stop $(docker ps -q); }
 
 function ydl() {
