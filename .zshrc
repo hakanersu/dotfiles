@@ -101,6 +101,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:$(yarn global bin)"
-export GOPATH="$HOME/Code/Go"
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

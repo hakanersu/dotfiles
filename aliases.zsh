@@ -1,10 +1,11 @@
 # Quality of life
-alias ls='ls -X -h --group-directories-first --color'
-alias build-source='./configure && make && sudo make install'
+alias subl="subl -a"
 alias untar='tar -zxvf'
 alias untarxz='tar -xJf'
 alias creset="source ~/.zshrc"
-alias subl="subl -a"
+alias ls='ls -X -h --group-directories-first --color'
+alias build-source='./configure && make && sudo make install'
+alias lso="ls -alG | awk '{k=0;for(i=0;i<=8;i++)k+=((substr(\$1,i+2,1)~/[rwx]/)*2^(8-i));if(k)printf(\" %0o \",k);print}'"
 
 # Git aliases
 alias s='git status'
@@ -26,7 +27,6 @@ alias install='sudo apt install'
 alias upgrade='sudo apt upgrade'
 alias autoremove='sudo apt autoremove'
 alias dist-upgrade='sudo apt dist-upgrade'
-alias lso="ls -alG | awk '{k=0;for(i=0;i<=8;i++)k+=((substr(\$1,i+2,1)~/[rwx]/)*2^(8-i));if(k)printf(\" %0o \",k);print}'"
 
 
 # Laravel
