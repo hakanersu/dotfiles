@@ -2,13 +2,13 @@
 
 ## Installation
 
-Clone this repository to ~
+Clone this repository to ~/.dotfiles
 
 ```
 git clone git@github.com:hakanersu/dotfiles.git ~/.dotfiles
 ```
 
-Copy .zshrc to ~
+Copy .zshrc as ~/.zshrc
 
 ```
 cp ~/.dotfiles/.zshrc ~/.zhsrc
@@ -23,7 +23,7 @@ Install plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-### Install spaceprompt
+#### Install spaceprompt
 
 ```
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
