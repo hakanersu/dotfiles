@@ -1,4 +1,21 @@
-### My Dotfiles
+# My Dotfiles
+
+## Installation
+
+Clone this repository to ~
+
+```
+git clone git@github.com:hakanersu/dotfiles.git ~/.dotfiles
+```
+
+Copy .zshrc to ~
+
+```
+cp ~/.dotfiles/.zshrc ~/.zhsrc
+```
+
+Install plugins
+
 
 #### Install zsh autosuggestions
 
