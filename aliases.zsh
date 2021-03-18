@@ -27,11 +27,11 @@ alias install='sudo apt install'
 alias upgrade='sudo apt upgrade'
 alias autoremove='sudo apt autoremove'
 alias dist-upgrade='sudo apt dist-upgrade'
-
+alias python=/usr/bin/python3
 
 # Laravel
 alias art='php artisan'
-
+alias mfs="php artisan migrate:fresh --seed"
 # Docker
 dstop() { docker stop $(docker ps -q); }
 
