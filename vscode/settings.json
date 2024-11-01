@@ -1,0 +1,227 @@
+{
+    /*
+     |--------------------------------------------------------------------------
+     | All editor related settings
+     |--------------------------------------------------------------------------
+     |
+     | All the editor related settings..
+     |
+    */
+    "editor.fontSize": 16,
+    "editor.formatOnSave": true,
+    "editor.guides.indentation": false,
+    "editor.lineHeight": 2,
+    "editor.glyphMargin": true,
+    "editor.minimap.enabled": false, // We don't need minimap
+    "editor.overviewRulerBorder": false, // On the right side of the editor there is a border
+    "editor.hideCursorInOverviewRuler": true,
+    "breadcrumbs.enabled": false, // I don't like breadcrumbs but it's useful sometimes.
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.tree.renderIndentGuides": "none",
+    "explorer.openEditors.visible": 0,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorSurroundingLines": 8, // This is the number of lines to show above and below the cursor
+    "editor.stickyScroll.enabled": false,
+    "workbench.editor.editorActionsLocation": "titleBar",
+    /*
+     |--------------------------------------------------------------------------
+     | Vim settings
+     |--------------------------------------------------------------------------
+     |
+     | All the vim settings are here.
+     |
+    */
+    "vim.leader": "<space>",
+    "vim.easymotion": true,
+    "vim.highlightedyank.enable": true,
+    "vim.smartRelativeLine": true,
+    "vim.highlightedyank.color": "#a9dc7660",
+    "vim.highlightedyank.duration": 250,
+    "vim.normalModeKeyBindings": [
+      {
+        "before": [
+          "<leader>",
+          "s"
+        ], // Search symbol
+        "commands": [
+          "workbench.action.showAllSymbols"
+        ]
+      },
+      {
+        "before": [
+          "f"
+        ],
+        "after": [
+          "leader",
+          "leader",
+          "2",
+          "s"
+        ]
+      },
+      {
+        "before": [
+          ":"
+        ],
+        "commands": [
+          "workbench.action.showCommands"
+        ],
+        "silent": true
+      },
+      {
+        "before": [
+          "g",
+          "a"
+        ],
+        "commands": [
+          "editor.action.selectHighlights"
+        ]
+      },
+      {
+        "before": [
+          "H"
+        ], // Focus previous tab at the left
+        "commands": [
+          "workbench.action.previousEditor"
+        ]
+      },
+      {
+        "before": [
+          "L"
+        ], // Focus next tab at the right
+        "commands": [
+          "workbench.action.nextEditor"
+        ]
+      },
+      {
+        "before": [
+          "Q"
+        ] // Close current tab "after": ["<C-w>", "q"]
+      },
+      {
+        "before": [
+          "<C-h>"
+        ], // Focus split window at left
+        "commands": [
+          "workbench.action.focusLeftGroup"
+        ]
+      },
+      {
+        "before": [
+          "<C-j>"
+        ], // Focus split window at right
+        "commands": [
+          "workbench.action.focusBelowGroup"
+        ]
+      },
+      {
+        "before": [
+          "<C-k>"
+        ], // Focus split window at above
+        "commands": [
+          "workbench.action.focusAboveGroup"
+        ]
+      },
+      {
+        "before": [
+          "<C-l>"
+        ], // Focus split window at below
+        "commands": [
+          "workbench.action.focusRightGroup"
+        ]
+      },
+      {
+        "before": [
+          "|"
+        ], // Split tab vertically
+        "after": [
+          "<C-w>",
+          "v"
+        ] // Means control + w then v
+      },
+      {
+        "before": [
+          "_"
+        ], // Split tab horizontally
+        "after": [
+          "<C-w>",
+          "s"
+        ]
+      },
+      {
+        "before": [
+          "<leader>",
+          "f"
+        ], // Search text
+        "commands": [
+          "workbench.action.findInFiles"
+        ]
+      },
+      {
+        "before": [
+          "<leader>",
+          "e"
+        ],
+        "commands": [
+          "workbench.view.explorer"
+        ]
+      }
+    ],
+    "vim.handleKeys": {
+      "<C-c>": false,
+      "<C-v>": false,
+      "<C-f>": false,
+      "<C-x>": false,
+    },
+    "vim.foldfix": true,
+    "vim.useSystemClipboard": true,
+    /*
+     |--------------------------------------------------------------------------
+     | Macros extension settings
+     |--------------------------------------------------------------------------
+     |
+     | Even do there are two macros here, I'm using only save and exit one.
+     |
+    */
+    "macros": {
+      "saveAndExitVimInsertMode": [
+        "workbench.action.files.save",
+        "extension.vim_escape"
+      ],
+      "copyAllContents": [
+        "editor.action.selectAll",
+        "editor.action.clipboardCopyAction"
+      ]
+    },
+    /*
+     |--------------------------------------------------------------------------
+     | Terminal settings
+     |--------------------------------------------------------------------------
+     |
+     | Terminal settings is here.
+     |
+    */
+    "terminal.integrated.fontSize": 20,
+    "terminal.integrated.fontFamily": "CaskaydiaMono Nerd Font Mono",
+    /*
+     |--------------------------------------------------------------------------
+     | Git settings
+     |--------------------------------------------------------------------------
+     |
+     | Git settings.
+     |
+    */
+    "git.autofetch": true,
+    "files.exclude": {
+      "**/*.log": true,
+      "**/*.rbi": true,
+      "**/log": true,
+      "**/tmp": true
+    },
+    "editor.fontFamily": "\"JetBrains Mono\",Menlo, Monaco, 'Courier New', monospace",
+    "workbench.tree.enableStickyScroll": false,
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.location": "hidden",
+  }
