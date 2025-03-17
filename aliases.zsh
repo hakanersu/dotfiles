@@ -22,7 +22,6 @@ alias gcd="git checkout develop"
 alias git-discard='git clean -df; git checkout -- .'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
-# zenpayroll
 alias zshconfig="nvim ~/.zshrc"
 alias be='bundle exec'
 alias bi='bundle install'
@@ -37,10 +36,10 @@ alias rails-credentials='EDITOR="nvim" rails credentials:edit'
 alias rails-credentials-dev='EDITOR="nvim" rails credentials:edit --environment development'
 alias rails-credentials-staging='EDITOR="nvim" rails credentials:edit --environment staging'
 alias ngrok-rt='~/./ngrok http 5000 --subdomain=remoteteam'
-alias zp-cleanup='cd ~/workspace/zenpayroll && git checkout main && git fetch --prune && git prune && rails-setup'
+
 alias lsp-logs='cat /Users/enes.dindas/.cache/nvim/lsp.log'
 alias zp-update-gql='bin/rake graphql:prepare && yarn generate-client-types'
-alias zp='cd ~/workspace/zenpayroll'
+
 
 
 # System aliases
